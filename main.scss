@@ -1,0 +1,261 @@
+// colors
+    // primary
+    $str_cyan:hsl(171, 66%, 44%);
+    $ligh_blue:hsl(233, 100%, 69%);
+    // neutral
+    $dark_grayish_blue:hsl(210, 10%, 33%);
+    $grayish_blue:hsl(201, 11%, 66%);
+
+// Typography
+    $body_font_size:30px;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+$font: 'Bai Jamjuree', sans-serif;
+
+*,body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    @mixin h1 {
+        font-size: $body_font_size;
+        font-family: $font;
+        color: $dark_grayish_blue;
+        font-weight: 600;
+    }
+    @mixin p {
+        font-size: 16.2px;
+        font-family: $font;
+        color: $grayish_blue;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    @mixin button {
+        box-sizing: border-box;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+        font-family: $font;
+        font-weight: 600;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        &:hover{
+            filter: brightness(120%);
+        }           
+    }
+    @mixin flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 2rem;        
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        .logo{
+            padding: 5rem;
+            background: url(./images/bg-header-mobile.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 0 120px 8px white inset;
+            .logo-c{
+                width: 60%;
+            }
+        }
+        .download{
+            @include flex;
+            h1{
+                @include h1;
+            }
+            p{
+                @include p;
+                padding-bottom:2rem; 
+            }
+            .button-ios{
+                @include button;
+                background-color: $str_cyan;        
+            }
+            .button-mac{
+                @include button;
+                background-color: $ligh_blue;
+            }
+
+        }
+    }
+    .section1{
+        header{
+            @include flex;
+        }
+
+        h1{
+            @include h1;
+        }
+        p{
+            @include p;
+        }
+        .features{
+            @include flex;
+            .desktop{
+                padding-top: 3rem;
+                width: 100%;
+                height: 100%;
+            }
+            .feature1{
+                h1{
+                    padding: 1rem 0rem;
+                }
+            }
+            .feature2{
+                h1{
+                    padding: 1rem 0rem;
+                }
+            }
+            .feature3{
+                h1{
+                    padding: 1rem 0rem;
+                }
+            }
+
+        }
+    }
+    .section2{
+        article{
+            @include flex;
+        }
+        h1{
+            @include h1;
+            padding: 2rem 0rem;
+        }
+        p{
+            @include p;
+            
+        }
+    }
+    .section3{
+        article{
+            @include flex;
+        }
+        header{            
+            padding-bottom: 4rem;
+            h1{
+                padding-bottom: 1rem
+            }
+        }
+        h1{
+            @include h1;
+        }
+        p{
+            @include p;
+        }
+        @mixin flow {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 1rem 0rem;
+
+            img{
+                width: 13%;
+                align-self: center;
+            }
+        }
+        .flow1{
+            @include flow;
+        }
+        .flow2{
+            @include flow;
+        }
+        .flow3{
+            @include flow;
+        }
+    }
+    .section4{
+        @include flex;
+        margin-bottom: 3rem;
+        img{
+            align-self: center;
+            width: 40%;
+            padding: 2rem 0rem 0rem 0rem;
+        }
+    }
+    .section5{
+        margin: 0rem 0rem 10rem 0rem;
+        article{
+            @include flex;
+            header{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    @include h1;
+                }
+                p{
+                    @include p;
+                }            
+            }
+            .button-ios{
+                @include button;
+                background-color: $str_cyan;        
+            }
+            .button-mac{
+                @include button;
+                background-color: $ligh_blue;
+            }
+        }
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f6f8;
+    align-items: center;
+    gap: 20px;
+    .logo-footer{
+        width: 15%;
+        padding: 4rem 0rem 2rem 0rem ;
+    }
+
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0rem 0rem 1rem 0rem;
+        a{
+            text-decoration: none;
+            color: $dark_grayish_blue;
+            font-family: $font;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+    .social-media{
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        padding: 1rem 1rem 0rem 1rem;
+    }
+}
+
+// footer{
+//     .attribution { 
+//         font-size: 11px; text-align: center; 
+//         a { 
+//             color: hsl(228, 45%, 44%); 
+//         }
+//     }
+// }
+
