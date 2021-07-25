@@ -74,6 +74,17 @@ main header .download p {
   padding-bottom: 2rem;
 }
 
+main header .download .download-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
 main header .download .button-ios {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -352,6 +363,17 @@ main .section5 article header p {
   line-height: 1.5rem;
 }
 
+main .section5 article .download-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
 main .section5 article .button-ios {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -403,6 +425,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  padding: 0rem 0rem 1rem 0rem;
 }
 
 footer .logo-footer {
@@ -445,5 +468,219 @@ footer .social-media {
 
 footer img {
   padding: 1rem 1rem 0rem 1rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .logo-footer {
+    width: 4%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 2rem 0rem 1rem 0rem;
+  }
+  footer .footer-links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-row-align: center;
+        align-self: center;
+    padding: 2rem 0rem 1rem 4rem;
+  }
+  footer .social-media {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 2rem 0rem 1rem 10rem;
+  }
+  main header .logo {
+    padding: 5rem;
+    background: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 0 0 120px 8px white inset;
+            box-shadow: 0 0 120px 8px white inset;
+  }
+  main header .logo .logo-c {
+    width: 10%;
+  }
+  main header .download {
+    margin: 0rem 20rem;
+  }
+  main header .download h1 {
+    font-size: 45px;
+  }
+  main header .download p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  main header .download .download-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main header .download .button-ios {
+    padding: 1rem 3rem;
+  }
+  main header .download .button-mac {
+    padding: 1rem 3rem;
+  }
+  main .section1 header {
+    margin: 2rem  20rem;
+  }
+  main .section1 header h1 {
+    font-size: 40px;
+  }
+  main .section1 header p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  main .section1 .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .section1 .features .desktop {
+    position: relative;
+    width: 100%;
+    display: block;
+    left: -5rem;
+    overflow: hidden;
+  }
+  main .section1 .features .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+    margin: 0rem 10rem 0rem 0rem;
+    padding: 0rem 4rem 0rem 0rem;
+  }
+  main .section1 .features .feature h1 {
+    font-size: 25px;
+  }
+  main .section1 .features .feature p {
+    line-height: 30px;
+  }
+  main .section2 header {
+    margin: 2rem  20rem;
+  }
+  main .section2 header h1 {
+    font-size: 40px;
+  }
+  main .section2 header p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  main .section2 .devices {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
+  }
+  main .section3 header {
+    margin: 2rem  20rem;
+  }
+  main .section3 header h1 {
+    font-size: 40px;
+  }
+  main .section3 header p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  main .section3 .flows {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .section3 .flows img {
+    width: 8%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .section4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+  main .section5 article header {
+    margin: 2rem  20rem;
+  }
+  main .section5 article header h1 {
+    font-size: 40px;
+  }
+  main .section5 article header p {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  main .section5 article .download-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .section5 article .button-ios {
+    padding: 1rem 3rem;
+  }
+  main .section5 article .button-mac {
+    padding: 1rem 3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
